@@ -31,3 +31,5 @@ Crearemos diferentes páginas básicas:
 1. La página de inicio, home o landing page
 2. La página de error 404
 3. La página próximamente o coming soon
+
+<--Proyecto de **práctica** para el módulo de _Html y Css_ en **Keepcoding**-->
