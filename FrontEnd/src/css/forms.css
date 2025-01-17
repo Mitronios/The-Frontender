@@ -57,3 +57,61 @@ button {
     color: white;
     font-weight: 700;
 }
+
+.checkbox {
+    padding: 1rem 0;
+    position: relative;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.checkbox label::before {
+    /* Recuadro exterior del checkbox */
+    content: "";
+    display: inline-block;
+    height: var(--font-size);
+    width: var(--font-size);
+    border: solid 1px gray;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.checkbox label::after {
+    /* Crear marca del checkbox */
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transform: rotate(-45deg);
+
+    /* Colocarlo sobre el recuadro */
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.checkbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: calc(var(--font-size) + .5rem);
+    line-height: var(--font-size);
+}
+
+/* Interactividad checkbox */
+.checkbox input[type="checkbox"]+label::after {
+    content: none;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+    content: "";
+}
