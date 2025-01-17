@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/descargas.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -84,18 +86,76 @@
           online. Elige la que más te guste y comienza a jugar!
         </p>
 
-        <ul>
-          <li><a href="#">PC</a></li>
-          <li><a href="#">XBOX</a></li>
-          <li><a href="#">PS4</a></li>
-          <li><a href="#">WEB</a></li>
-          <li><a href="#">PEGI16</a></li>
+        <ul class="descargas">
+          <li>
+            <a href="#"><img src="./img/platforms/pc.png" alt="PC" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/platforms/xbox.png" alt="XBOX" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/platforms/ps4.png" alt="PlayStation4"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/platforms/www.png" alt="WEB" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/platforms/pegi.png" alt="PEGI16" /></a>
+          </li>
         </ul>
       </section>
 
       <section id="comunidad">
         <h1>Comunidad</h1>
-        <p>Crear formulario de suscripción</p>
+        <form action="" id="subscribe"></form>
+        <p>
+          <label for="nombre">Nombre: </label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Quién eres?"
+          />
+        </p>
+        <p>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Tu email aquí (no haremos SPAM)"
+          />
+        </p>
+        <p>
+          <label for="alias">Alias: </label>
+          <input
+            type="text"
+            name="alias"
+            id="alias"
+            placeholder="Introduce tu alias"
+          />
+        </p>
+        <p>
+          <input type="checkbox" name="boletin" id="boletin" />
+          <label for="form-boletin"
+            >¿Quieres suscribirte a nuestro boletin de novedades?</label
+          >
+        </p>
+        <p>
+          <label for="bio">Sobre tí: </label>
+          <textarea
+            name="bio"
+            id="form-bio"
+            cols="30"
+            rows="10"
+            placeholder="Cuéntanos algo sobre tí"
+          ></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Enviar" />
+        </p>
       </section>
 
       <section id="galeria">
